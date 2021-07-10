@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2fef618a-7c48-4adf-b95b-1fbfc9e3f38c}") = "no_recoil_mod", "no_recoil_mod\no_recoil_mod.csproj", "{ebe09be6-7a68-46cd-9705-f18c158da780}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ebe09be6-7a68-46cd-9705-f18c158da780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ebe09be6-7a68-46cd-9705-f18c158da780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ebe09be6-7a68-46cd-9705-f18c158da780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ebe09be6-7a68-46cd-9705-f18c158da780}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {072f5550-1675-4551-9ada-19e69b114cff}
+	EndGlobalSection
+EndGlobal
