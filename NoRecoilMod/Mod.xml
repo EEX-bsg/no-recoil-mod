@@ -120,7 +120,7 @@ This mod reduces the recoil of canon.<!-- FIX: Insert a short description here. 
 		 Available resource types are Mesh, Texture, AudioClip, and AssetBundle. -->
 	<Resources>
 		<!-- <Mesh name="some-mesh-name" path="some_mesh_file.obj" /> -->
-		<Texture name="icon" path="icon.png" /> -->
+		<Texture name="icon" path="icon.png" />
 	</Resources>
 
 
