@@ -26,17 +26,17 @@ namespace no_recoil_mod
 		{
             // Called when the mod is loaded.
             mod = new GameObject("NoRecoilMod");
-            UnityEngine.Object.DontDestroyOnLoad(SingleInstance<NotRecoilModule>.Instance);
+            UnityEngine.Object.DontDestroyOnLoad(SingleInstance<NoRecoilModule>.Instance);
             SingleInstance<BlockSelector>.Instance.transform.parent = mod.transform;
             UnityEngine.Object.DontDestroyOnLoad(mod);
         }
-        public class NotRecoilModule : SingleInstance<NotRecoilModule>
+        public class NoRecoilModule : SingleInstance<NoRecoilModule>
         {
             public override string Name
             {
                 get
                 {
-                    return "ETCMmodule";
+                    return "NoRecoilModule";
 
                 }
             }
@@ -63,7 +63,6 @@ namespace no_recoil_mod
             }
             public Dictionary<int, Type> BlockDict = new Dictionary<int, Type>
             {
-			    // スタートブロック
 			    {11, typeof(CannonControle) },
             };
             public void Awake()
@@ -113,6 +112,7 @@ namespace no_recoil_mod
                 if(!StatMaster.isClient || StatMaster.isLocalSim)
                 {
                     rigidbody = GetComponent<Rigidbody>();
+                    rigidbody.maxAngularVelocity = 10000f;
                 }
             }
             private void Update()
@@ -133,7 +133,7 @@ namespace no_recoil_mod
                     return;
                 }
                 canonblock = GetComponent<CanonBlock>();
-                canonblock.knockbackSpeed = 0.0f;
+                canonblock.knockbackSpeed = knockBackSpeedDefault / canonblock.StrengthSlider.Value;
                 canonblock.randomDelay = randomDelay;
                 canonblock.interval = interval;
                 if(!StatMaster.isClient || StatMaster.isLocalSim)
