@@ -7,12 +7,12 @@
 
 	<!-- General information about the mod. -->
 	<Name>NoRecoilMod</Name>
-	<Author>Mod Author</Author> <!-- FIX: Insert your name here. -->
+	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build -->
-	<Version>0.0.1</Version>
+	<Version>1.0.0</Version>
 	
 	<Description>
-A newly created mod. <!-- FIX: Insert a short description here. -->
+This mod reduces the recoil of canon.<!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -39,7 +39,7 @@ A newly created mod. <!-- FIX: Insert a short description here. -->
 		 Important: You cannot upload mods to Steam or WeGame while Debug is turned on.
 		 
 		 Note: This value is independent of the Debug values for specific Blocks and Entities.-->
-	<Debug>true</Debug>
+	<Debug>false</Debug>
 	
 	<!-- Whether the mod can be used in MP or only in SP.
 		 SP-only mods are easier to write but obviously more limited in their uses.
