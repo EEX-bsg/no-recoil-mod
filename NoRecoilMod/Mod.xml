@@ -1,0 +1,39 @@
+<Mod>
+	<Name>NoRecoilMod</Name>
+	<Author>EEX</Author>
+	<Version>1.0.1</Version>
+
+	<Description>
+This mod reduces the recoil of canon.
+	</Description>
+
+	<Icon name="icon" />
+
+	<Debug>false</Debug>
+
+	<MultiplayerCompatible>true</MultiplayerCompatible>
+
+	<Assemblies>
+		<Assembly path="NoRecoilModScript.dll" />
+	</Assemblies>
+
+	<Blocks>
+	</Blocks>
+
+	<Entities>
+	</Entities>
+
+	<Triggers>
+	</Triggers>
+
+	<Events>
+	</Events>
+
+	<Keys>
+	</Keys>
+
+	<Resources>
+		<Texture name="icon" path="icon.png" />
+	</Resources>
+<ID>ed3ed2d0-a918-45e2-828e-6cc08df2784a</ID>
+</Mod>
